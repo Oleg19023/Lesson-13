@@ -398,15 +398,12 @@ nav {
     }
 
     .My_Account2 {
-        grid-area: My_Account2;
         margin-top: 0;
     }
 
     .Extras {
-        grid-area: Extras;
         margin-top: 0;
     }
     
-
   }
 
