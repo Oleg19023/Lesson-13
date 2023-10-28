@@ -225,6 +225,7 @@ b {
 }
 .My_Account2 {
     grid-area: My_Account2;
+    margin-top: 30px;
 }
 .Order_History {
     grid-area: Order_History;
@@ -237,6 +238,7 @@ b {
 }
 .Extras {
     grid-area: Extras;
+    margin-top: 30px;
 }
 .Customer_Service {
     grid-area: Customer_Service;
