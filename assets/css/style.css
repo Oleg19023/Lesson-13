@@ -261,12 +261,6 @@ b {
     transition: 0.3s;
 }
 
-#hedaer__nav.navbar {
-    background-color: rgba(255, 255, 255, 0) !important;
-    padding: 0;
-    margin: 0;
-}
-
 /* Стили для мобильных устройств */
 @media (max-width: 767px) {
 
@@ -277,7 +271,6 @@ b {
 
     .header {
         width: 100%;
-        margin-left: 0px;
     }
     
     .headerimage {
