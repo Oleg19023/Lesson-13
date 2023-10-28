@@ -161,10 +161,11 @@ b {
 }
 
 .footer_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #272525;
     color: white;
     padding: 10px;
-    margin-top: auto;
 }
 
 .footer_head_card1 h4 {
@@ -352,7 +353,10 @@ nav {
 
     nav {
         width: 100%;
-        margin-left: 20px;
+    }
+
+    .navbar-brand {
+        font-weight: 100;
     }
 
     .headerimage {
@@ -366,10 +370,6 @@ nav {
     .content1.image {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        height: 200px;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     
     .components {
