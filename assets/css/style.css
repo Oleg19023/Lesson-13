@@ -384,42 +384,6 @@ nav {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-      
-    .imagecard1 {
-        background-image: url("../images/Handbag.jpg");
-        color: white;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-        padding: 10px;
-    }
-    
-    .imagecard2 {
-        background-image: url("../images/Watch.jpg");
-        color: white;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-        padding: 10px;
-    }
-    
-    .imagecard3 {
-        background-image: url("../images/Shoes.jpg");
-        color: white;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-        padding: 10px;
-    }
     
     .components {
         display: grid;
@@ -430,11 +394,6 @@ nav {
         text-align: center;
     }
     
-    .components_card {
-        border-radius: 0;
-        border: none;
-    }
-    
     .wrap {
         display: grid;
         margin-left: auto;
@@ -443,25 +402,8 @@ nav {
         grid-gap: 20px; 
     }
     
-    .low-price{
-        color: red;
-    }
-    
     .component_image {
         width: 90%;
-    }
-    
-    .component-title {
-        padding-top: 10px;
-    }
-    
-    s {
-        color: rgb(0, 0, 0);
-    }
-    
-    b {
-        color: red;
-        font-weight: 500;
     }
     
     .component-card-text {
@@ -495,14 +437,6 @@ nav {
         transition: color 0.3s;
     }
     
-    .header__link:hover {
-        color: #007bff;
-    }
-    
-    .header__last {
-        margin-right: 0;
-    }
-    
     .footer_bottom {
         background-color: #272525;
         color: white;
@@ -526,69 +460,7 @@ nav {
         padding: 8px 0;
         text-decoration: none;
     }
-    
-    .About {
-        grid-area: About;
-    }
-    .Contact_Us {
-        grid-area: Contact_Us;
-    }
-    .Brands {
-        grid-area: Brands;
-    }
-    .My_Account {
-        grid-area: My_Account;
-    }
-    .Delivery {
-        grid-area: Delivery;
-    }
-    .Privacy_Policy {
-        grid-area: Privacy_Policy;
-    }
-    .Terms_Conditions {
-        grid-area: Terms_Conditions;
-    }
-    .Returns {
-        grid-area: Returns;
-    }
-    .Site_Map {
-        grid-area: Site_Map;
-    }
-    .Gift_Vouchers {
-        grid-area: Gift_Vouchers;
-    }
-    .Affiliates {
-        grid-area: Affiliates;
-    }
-    .Specials {
-        grid-area: Specials;
-    }
-    .My_Account {
-        grid-area: My_Account;
-    }
-    .My_Account2 {
-        grid-area: My_Account2;
-        margin-top: 30px;
-    }
-    .Order_History {
-        grid-area: Order_History;
-    }
-    .Wish_List {
-        grid-area: Wish_List;
-    }
-    .Newsletter {
-        grid-area: Newsletter;
-    }
-    .Extras {
-        grid-area: Extras;
-        margin-top: 30px;
-    }
-    .Customer_Service {
-        grid-area: Customer_Service;
-    }
-    .Information {
-        grid-area: Information;
-    }
+
     .footer_main {
         column-gap: 50px;
         display: grid;
