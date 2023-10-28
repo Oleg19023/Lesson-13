@@ -105,7 +105,7 @@ body {
 }
 
 .component_image {
-    width: 90%;
+    width: 60%;
 }
 
 .component-title {
@@ -263,89 +263,349 @@ b {
     transition: 0.3s;
 }
 
-/* Стили для мобильных устройств */
-@media (max-width: 767px) {
+
+nav {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.header {
+    width: 100%;
+}
+
+.headerimage {
+  height: 200px;
+  width: 90%;
+  margin-left: 20px;
+}
+
+.content1.image {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px; 
+}
+
+.content1.image img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.imagecard1, .imagecard2, .imagecard3 {
+    position: relative;
+    margin: 0 10px;
+    max-width: 90%;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+.components {
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 5%;
+  row-gap: 30px;
+  margin-top: 250px;
+}
+
+.component-title {
+    font-size: 15px;
+}
+
+.footer_main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+    display: grid;
+    grid-template-areas: "Information Customer_Service"
+    "About Contact_Us"
+    "Delivery Returns"
+    "Privacy_Policy Site_Map"
+    "Terms_Conditions ."
+    "Extras My_Account2"
+    "Brands My_Account"
+    "Gift_Vouchers Order_History"
+    "Affiliates Wish_List"
+    "Specials Newsletter";
+    padding: 50px 0;
+}
+
+.About, .Delivery, .Privacy_Policy, .Terms_Conditions, .Contact, .Returns, .Site_Map, .Brands, .Gift_Vouchers, .Affiliates, .Specials, .My_Account, .My_Account2, .Order_History, .Wish_List, .Newsletter, .Information, .Customer_Service, .Extras {
+    font-size: 15px;
+}
+
+.components .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    column-gap: 2%;
+    row-gap: 50px;
+    text-align: center;
+  }
+
+
+/* Стили для пк */
+@media (min-width: 767px) {
 
     nav {
-        width: 90%;
-        margin-left: 20px;
-    }
-
-    .header {
         width: 100%;
-    }
-    
-    .headerimage {
-      height: 200px;
-      width: 90%;
-      margin-left: 20px;
-    }
-  
-    .content1.image {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px; 
-    }
-  
-    .content1.image img {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }
-    
-    .imagecard1, .imagecard2, .imagecard3 {
-        position: relative;
-        margin: 0 10px;
-        max-width: 90%;
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-top: 5px;
         margin-left: 20px;
-      }
-  
-    .components {
-      grid-template-columns: repeat(1, 1fr);
-      column-gap: 5%;
-      row-gap: 30px;
-      margin-top: 250px;
     }
 
-    .component-title {
-        font-size: 15px;
+    .headerimage {
+        display: grid;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: center top;
     }
     
-    .footer_main {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        column-gap: 10px;
+    .image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+    .content1.image {
         display: grid;
-        grid-template-areas: "Information Customer_Service"
-        "About Contact_Us"
-        "Delivery Returns"
-        "Privacy_Policy Site_Map"
-        "Terms_Conditions ."
-        "Extras My_Account2"
-        "Brands My_Account"
-        "Gift_Vouchers Order_History"
-        "Affiliates Wish_List"
-        "Specials Newsletter";
-        padding: 50px 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-
-    .About, .Delivery, .Privacy_Policy, .Terms_Conditions, .Contact, .Returns, .Site_Map, .Brands, .Gift_Vouchers, .Affiliates, .Specials, .My_Account, .My_Account2, .Order_History, .Wish_List, .Newsletter, .Information, .Customer_Service, .Extras {
-        font-size: 15px;
+      
+    .content1.image img {
+        width: 100%;
+        max-height: 100%;
+        max-height: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-
-    .components .wrap {
+      
+    .imagecard1 {
+        background-image: url("../images/Handbag.jpg");
+        color: white;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .imagecard2 {
+        background-image: url("../images/Watch.jpg");
+        color: white;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .imagecard3 {
+        background-image: url("../images/Shoes.jpg");
+        color: white;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    .components {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
-        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
         margin-top: 10px;
         column-gap: 2%;
         row-gap: 50px;
         text-align: center;
-      }
+    }
+    
+    .components_card {
+        border-radius: 0;
+        border: none;
+    }
+    
+    .wrap {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-rows: 1fr;
+        grid-gap: 20px; 
+    }
+    
+    .low-price{
+        color: red;
+    }
+    
+    .component_image {
+        width: 90%;
+    }
+    
+    .component-title {
+        padding-top: 10px;
+    }
+    
+    s {
+        color: rgb(0, 0, 0);
+    }
+    
+    b {
+        color: red;
+        font-weight: 500;
+    }
+    
+    .component-card-text {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .header {
+        background-color: #ffffff00;
+        padding: 20px;
+        border-bottom: 1px solid #bbb6b6;
+    }
+    
+    .header__h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+    
+    .header__h1__span {
+        color: #007bff;
+    }
+    
+    .header__main {
+        margin-top: 10px;
+    }
+    
+    .header__link {
+        text-decoration: none;
+        color: #333;
+        margin-right: 10px;
+        transition: color 0.3s;
+    }
+    
+    .header__link:hover {
+        color: #007bff;
+    }
+    
+    .header__last {
+        margin-right: 0;
+    }
+    
+    .footer_bottom {
+        background-color: #272525;
+        color: white;
+        padding: 10px;
+    }
+    
+    .footer_head_card1 h4 {
+        color: #000000;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .footer_head_card1 h6{
+        color: #000000;
+        text-align: center;
+    }
+    
+    .footer_main a:not(.none) {
+        color: #000000;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+        padding: 8px 0;
+        text-decoration: none;
+    }
+    
+    .About {
+        grid-area: About;
+    }
+    .Contact_Us {
+        grid-area: Contact_Us;
+    }
+    .Brands {
+        grid-area: Brands;
+    }
+    .My_Account {
+        grid-area: My_Account;
+    }
+    .Delivery {
+        grid-area: Delivery;
+    }
+    .Privacy_Policy {
+        grid-area: Privacy_Policy;
+    }
+    .Terms_Conditions {
+        grid-area: Terms_Conditions;
+    }
+    .Returns {
+        grid-area: Returns;
+    }
+    .Site_Map {
+        grid-area: Site_Map;
+    }
+    .Gift_Vouchers {
+        grid-area: Gift_Vouchers;
+    }
+    .Affiliates {
+        grid-area: Affiliates;
+    }
+    .Specials {
+        grid-area: Specials;
+    }
+    .My_Account {
+        grid-area: My_Account;
+    }
+    .My_Account2 {
+        grid-area: My_Account2;
+        margin-top: 30px;
+    }
+    .Order_History {
+        grid-area: Order_History;
+    }
+    .Wish_List {
+        grid-area: Wish_List;
+    }
+    .Newsletter {
+        grid-area: Newsletter;
+    }
+    .Extras {
+        grid-area: Extras;
+        margin-top: 30px;
+    }
+    .Customer_Service {
+        grid-area: Customer_Service;
+    }
+    .Information {
+        grid-area: Information;
+    }
+    .footer_main {
+        column-gap: 50px;
+        display: grid;
+        grid-template-areas:
+        "Information Customer_Service Extras My_Account2"
+        "About Contact_Us Brands My_Account"
+        "Delivery Returns Gift_Vouchers Order_History"
+        "Privacy_Policy Site_Map Affiliates Wish_List"
+        "Terms_Conditions . Specials Newsletter";
+        padding: 10px 0;
+    }
+    
+    .footer_main a:hover {
+        color: #007bff;
+        transition: 0.3s;
+    }
+    
 
   }
 
