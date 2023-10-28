@@ -351,7 +351,6 @@ nav {
     }
 
     .headerimage {
-        display: grid;
         width: 100%;
         height: 350px;
         object-fit: cover;
@@ -359,12 +358,10 @@ nav {
     }
     
     .content1.image {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     
     .components {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 10px;
         column-gap: 2%;
@@ -378,7 +375,6 @@ nav {
 
     .footer_main {
         column-gap: 50px;
-        display: grid;
         grid-template-areas:
         "Information Customer_Service Extras My_Account2"
         "About Contact_Us Brands My_Account"
