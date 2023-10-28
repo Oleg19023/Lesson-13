@@ -164,6 +164,7 @@ b {
     background-color: #272525;
     color: white;
     padding: 10px;
+    margin-top: auto;
 }
 
 .footer_head_card1 h4 {
@@ -362,12 +363,6 @@ nav {
         object-position: center top;
     }
     
-    .image img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-      
     .content1.image {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -375,14 +370,6 @@ nav {
         height: 200px;
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-      
-    .content1.image img {
-        width: 100%;
-        max-height: 100%;
-        max-height: 150px;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
     
     .components {
@@ -394,71 +381,8 @@ nav {
         text-align: center;
     }
     
-    .wrap {
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-rows: 1fr;
-        grid-gap: 20px; 
-    }
-    
     .component_image {
-        width: 90%;
-    }
-    
-    .component-card-text {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    .header {
-        background-color: #ffffff00;
-        padding: 20px;
-        border-bottom: 1px solid #bbb6b6;
-    }
-    
-    .header__h1 {
-        font-size: 2em;
-        margin: 0;
-    }
-    
-    .header__h1__span {
-        color: #007bff;
-    }
-    
-    .header__main {
-        margin-top: 10px;
-    }
-    
-    .header__link {
-        text-decoration: none;
-        color: #333;
-        margin-right: 10px;
-        transition: color 0.3s;
-    }
-    
-    .footer_bottom {
-        background-color: #272525;
-        color: white;
-        padding: 10px;
-    }
-    
-    .footer_head_card1 h4 {
-        color: #000000;
-        text-align: center;
-        margin-top: 50px;
-    }
-    
-    .footer_head_card1 h6{
-        color: #000000;
-        text-align: center;
-    }
-    
-    .footer_main a:not(.none) {
-        color: #000000;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.247);
-        padding: 8px 0;
-        text-decoration: none;
+        width: 100%;
     }
 
     .footer_main {
@@ -472,10 +396,15 @@ nav {
         "Terms_Conditions . Specials Newsletter";
         padding: 10px 0;
     }
-    
-    .footer_main a:hover {
-        color: #007bff;
-        transition: 0.3s;
+
+    .My_Account2 {
+        grid-area: My_Account2;
+        margin-top: 0;
+    }
+
+    .Extras {
+        grid-area: Extras;
+        margin-top: 0;
     }
     
 
